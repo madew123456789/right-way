@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2008/12/17/cool-red-outer-glow-pointer.html" target="_blank" title="Cool Red Outer Glow Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cool Red Outer Glow Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<html translate="no">
+
+ <script>
+    // Initialize a flag to track if the audio is currently playing
+    let isAudioPlaying = false;
+
+    document.addEventListener('click', () => {
+        // Check if audio is already playing; if so, return early
+        if (isAudioPlaying) {
+            return;
+        }
+
+        const audio = new Audio('https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/audioloop%20(1).mp3?v=1717915882870');
+        
+        // Set loop property to false to prevent audio from looping
+        audio.loop = false;
+
+        // Set flag to true to indicate audio is now playing
+        isAudioPlaying = true;
+
+        // Play the audio
+        audio.play();
+
+        // When audio finishes playing, reset the flag to false
+        audio.onended = () => {
+            isAudioPlaying = false;
+        };
+    });
+</script>
+<head>
+   <div id="player">
+            <audio controls autoplay hidden>
+              <source
+                src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/vesak-lantern-BT.png?v=1717866470586"
+                type="audio/mp3"
+              />
+              unsupported !!
+            </audio>
+   <script>
+        // JavaScript to change the title
+        let titles = ["Digital Thorana 2024 🌐", "Digital Thorana 2024 🖥️", "Digital Thorana 2024 🎓", "Digital Thorana 2024 🤖"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 20); // Change title every 2 seconds
+    </script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=659399cbd2bb410012d24176&product=powr-social-feed' async='async'></script>
+    <script>
+        // Array of pages to cycle through
+const pages = [' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', ' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔ ', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔'];
+        let currentIndex = 0;
+
+        function changeURL() {
+            // Get the next page from the array
+            const nextPage = pages[currentIndex];
+
+            // Change the URL without reloading the page
+            history.pushState(null, '', nextPage);
+
+            // Update the displayed current page
+            document.getElementById('currentPage').innerText = 'Current Page: ' + nextPage;
+
+            // Update the index for the next change
+            currentIndex = (currentIndex + 1) % pages.length;
+        }
+
+        // Change the URL every 3 seconds
+        setInterval(changeURL,  100);
+
+        // Optional: Handling the back/forward buttons
+        window.onpopstate = function(event) {
+            // This will handle the URL changes via back/forward buttons
+            document.getElementById('currentPage').innerText = 'Current Page: ' + location.pathname.replace('/', '');
+        };
+    </script>
+
+     
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'U' ||  // U
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+<body oncontextmenu="return false;">
+  
+
+  <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanterns</title>
+    <style>
+        /* Embedded CSS for easy deployment */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        #background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+        }
+        .button-container a {
+            display: block;
+        }
+        .button-container img {
+            width: 15vw; /* Changed width to 200px */
+            height: auto; /* Changed height to 200px */
+            cursor: pointer;
+        }
+        .spinner {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+        }
+        .spinner div {
+            width: 40px;
+            height: 40px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/dc3330dd-9bfa-41d4-8901-52fb83f656e920(2)%20(3).mp4?v=1717911400224" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="spinner" id="spinner">
+        <div></div>
+    </div>
+  <img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/b-removebg-preview%20(1).png?v=1717866396907" style="position: fixed; top: 0; left: 0; width: 10vw; height: auto; margin-right: 50px;">
+    <div class="button-container">
+        <a href="/index.html" class="btn-left"><img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/download%20(8).png?v=1717914262750" alt="Left Button"></a>
+        <a href="#" class="btn-right" id="change-video"><img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/download%20(7).png?v=1717914103808" alt="Right Button"></a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById('background-video');
+            const spinner = document.getElementById('spinner');
+
+            let checkVideoLoaded = setInterval(function() {
+                if (video.readyState >= 3) {
+                    clearInterval(checkVideoLoaded);
+                    spinner.style.display = 'none';
+                }
+            }, 100);
+
+            const changeVideo = function(e) {
+                e.preventDefault();
+                spinner.style.display = 'flex';
+                const newVideoSrc = 'https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/c61ebca4-2dd1-439f-b8ae-52e4f4d6a242%20(1).mp4?v=1717911941330';
+                video.src = newVideoSrc;
+                video.load();
+                video.play();
+
+                checkVideoLoaded = setInterval(function() {
+                    if (video.readyState >= 3) {
+                        clearInterval(checkVideoLoaded);
+                        spinner.style.display = 'none';
+                        document.getElementById('change-video').removeEventListener('click', changeVideo);
+                        document.getElementById('change-video').addEventListener('click', changeVideoAgain);
+                    }
+                }, 100);
+            };
+
+            const changeVideoAgain = function(e) {
+                e.preventDefault();
+                spinner.style.display = 'flex';
+                const newVideoSrc2 = 'https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/fad9a239-4587-4340-9f8c-7f58a7f623c8%20(1).mp4?v=1717912256413';
+                video.src = newVideoSrc2;
+                video.load();
+                video.play();
+
+                checkVideoLoaded = setInterval(function() {
+                    if (video.readyState >= 3) {
+                        clearInterval(checkVideoLoaded);
+                        spinner.style.display = 'none';
+                        document.getElementById('change-video').removeEventListener('click', changeVideoAgain);
+
+                        const newButton = document.createElement('a');
+                        newButton.href = '#';
+                        newButton.className = 'btn-right';
+                        newButton.innerHTML = '<img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/download%20(7).png?v=1717914103808" alt="Right Button">';
+                        newButton.addEventListener('click', changeVideoOnceMore);
+                        document.querySelector('.button-container').replaceChild(newButton, document.getElementById('change-video'));
+                    }
+                }, 100);
+            };
+
+            const changeVideoOnceMore = function(e) {
+                e.preventDefault();
+                spinner.style.display = 'flex';
+                const newVideoSrc3 = 'https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/d6eed04f-42cf-446f-8035-e116a6e71f08%20(1).mp4?v=1717913839278';
+                video.src = newVideoSrc3;
+                video.load();
+                video.play();
+
+                checkVideoLoaded = setInterval(function() {
+                    if (video.readyState >= 3) {
+                        clearInterval(checkVideoLoaded);
+                        spinner.style.display = 'none';
+                    }
+                }, 100);
+            };
+
+            document.getElementById('change-video').addEventListener('click', changeVideo);
+        });
+    </script>
+</body>
+</html>

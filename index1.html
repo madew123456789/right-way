@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2008/12/17/cool-red-outer-glow-pointer.html" target="_blank" title="Cool Red Outer Glow Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cool Red Outer Glow Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+ <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<html translate="no">
+
+  <!-- Include SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- Include Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<body>
+
+<!-- Your HTML content here -->
+
+<!-- Include SweetAlert JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  // Example alert with image and icon
+  Swal.fire({
+    title: '𝟚𝟘𝟚𝟜 𝔻𝕚𝕘𝕚𝕥𝕒𝕝 තොරණ වෙත ඔබ සැම සාදරෙන් පිළිගනිමු.මෙතැන් සිට ලබාදී ඇති උපදෙස් පිලිපදින්න‍🔥',
+ 
+    imageUrl: 'https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/h%20(online-video-cutter.com)%20(1).gif?v=1717762510747',
+    imageAlt: 'Custom Image',
+    confirmButtonText: 'OK',
+    icon: 'success' // Font Awesome icon class
+  });
+</script>
+
+
+    <script>
+        // JavaScript to change the title
+        let titles = ["Digital Thorana 2024 🌐", "Digital Thorana 2024 🖥️", "Digital Thorana 2024 🎓", "Digital Thorana 2024 🤖"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 20); // Change title every 2 seconds
+    </script>
+
+    <script>
+        // Array of pages to cycle through
+const pages = [' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', ' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔ ', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔'];
+        let currentIndex = 0;
+
+        function changeURL() {
+            // Get the next page from the array
+            const nextPage = pages[currentIndex];
+
+            // Change the URL without reloading the page
+            history.pushState(null, '', nextPage);
+
+            // Update the displayed current page
+            document.getElementById('currentPage').innerText = 'Current Page: ' + nextPage;
+
+            // Update the index for the next change
+            currentIndex = (currentIndex + 1) % pages.length;
+        }
+
+        // Change the URL every 3 seconds
+        setInterval(changeURL,  100);
+
+        // Optional: Handling the back/forward buttons
+        window.onpopstate = function(event) {
+            // This will handle the URL changes via back/forward buttons
+            document.getElementById('currentPage').innerText = 'Current Page: ' + location.pathname.replace('/', '');
+        };
+    </script>
+
+     
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'U' ||  // U
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+<body oncontextmenu="return false;">
+  
+
+  <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+</body>
+    <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+
+ 
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<head>
+<body>
+  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=659399cbd2bb410012d24176&product=powr-social-feed' async='async'></script>
+    <script>
+    // Initialize a flag to track if the audio is currently playing
+    let isAudioPlaying = false;
+
+    document.addEventListener('click', () => {
+        // Check if audio is already playing; if so, return early
+        if (isAudioPlaying) {
+            return;
+        }
+
+        const audio = new Audio('https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/mix-31s-audio-joinercom.mp3?v=1717950450146');
+        
+        // Set loop property to false to prevent audio from looping
+        audio.loop = false;
+
+        // Set flag to true to indicate audio is now playing
+        isAudioPlaying = true;
+
+        // Play the audio
+        audio.play();
+
+        // When audio finishes playing, reset the flag to false
+        audio.onended = () => {
+            isAudioPlaying = false;
+        };
+    });
+</script>
+
+  </head>
+  <body>
+    
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://cdn.glitch.global/47323e98-c968-4907-98f1-eb338039836a/HQOkfpDgRLFJYY1WAaL7--1--u93g5_15.625x-modified.png?v=1715150023152"
+    />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/47323e98-c968-4907-98f1-eb338039836a/HQOkfpDgRLFJYY1WAaL7-1-u93g5_15.625x-modified.ico?v=1715150177181"
+    />
+
+    <title>Digital Thorana 2024</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <meta name="google" value="notranslate" />
+  <meta http-equiv="refresh" content="11;url=/index2.html" />
+    <style>
+      html,
+ body {
+  background-image: url('https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/Screenrecording2online-video-cutter.com1-ezgif.com-optipng.png?v=1717403721663');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .phone {
+        height: 50px;
+        width: 100px;
+        border: 3px solid white;
+        border-radius: 10px;
+        -webkit-animation: rotate 1.5s ease-in-out infinite alternate;
+        animation: rotate 1.5s ease-in-out infinite alternate;
+        /* display: none; */
+      }
+
+      .message {
+        color: white;
+        font-size: 1em;
+        margin-top: 40px;
+        /* display: none; */
+      }
+
+      @-webkit-keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-90deg);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-90deg);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+
+      @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+        .phone,
+        .message {
+          display: block;
+        }
+      }
+    </style>
+
+
+          <!-- /Demo content -->
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script>
+            window.jQuery ||
+              document.write(
+                '<script src="js/vendor/jquery-1.9.1.min.js"><\/script>'
+              );
+          </script>
+          <script src="main.js"></script>
+
+          <script>
+            /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+            document.onkeydown = function (e) {
+              if (
+                e.ctrlKey &&
+                (e.keyCode === 67 ||
+                  e.keyCode === 86 ||
+                  e.keyCode === 85 ||
+                  e.keyCode === 117)
+              ) {
+                //Alt+c, Alt+v will also be disabled sadly.
+                alert("You are an idiot");
+              }
+              return false;
+            };
+          </script>
+
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script>
+            document.onkeydown = function (e) {
+              if (
+                e.ctrlKey &&
+                (e.keyCode === 67 ||
+                  e.keyCode === 86 ||
+                  e.keyCode === 85 ||
+                  e.keyCode === 117)
+              ) {
+                return false;
+              } else {
+                return true;
+              }
+            };
+            $(document).keypress("u", function (e) {
+              if (e.ctrlKey) {
+                return false;
+              } else {
+                return true;
+              }
+            });
+          </script>
+
+          <script>
+                 <script language="JavaScript">
+
+                   window.onload = function () {
+                       document.addEventListener("contextmenu", function (e) {
+                           e.preventDefault();
+                       }, false);
+                       document.addEventListener("keydown", function (e) {
+                           //document.onkeydown = function(e) {
+                           // "I" key
+                           if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                               disabledEvent(e);
+                           }
+                           // "J" key
+                           if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                               disabledEvent(e);
+                           }
+                           // "S" key + macOS
+                           if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                               disabledEvent(e);
+                           }
+                           // "U" key
+                           if (e.ctrlKey && e.keyCode == 85) {
+                               disabledEvent(e);
+                           }
+                           // "F12" key
+                           if (event.keyCode == 123) {
+                               disabledEvent(e);
+                           }
+                       }, false);
+                       function disabledEvent(e) {
+                           if (e.stopPropagation) {
+                               e.stopPropagation();
+                           } else if (window.event) {
+                               window.event.cancelBubble = true;
+                           }
+                           e.preventDefault();
+                           return false;
+                       }
+                   }
+            //edit: removed ";" from last "}" because of javascript error
+          </script>
+          
+
+     
+                      
+
+                          
+        </div>
+      </html>
+    </head>
+  </body>
+</html>
+</body>

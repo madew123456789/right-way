@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: show;
+            font-family: Arial, sans-serif;
+        }
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Ensure the video stays behind other content */
+        }
+
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop class="video-background">
+        <source src="https://cdn.glitch.global/32dba132-9d16-4f17-9b67-2efff2913d01/vecteezy_wesak-poya-diwali-lantern-wesak-background-wesak-kudu_445777982-ezgif.com-resize-video%20(2).mp4?v=1718180993876" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+</body>
+</html>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100vh;
+            background: none;
+            color: #000;
+            overflow: hidden;
+        }
+
+        #fullscreenBtn {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            /* Changing background image */
+            background-image: url('https://i.imgur.com/LGtR3ku.gif');
+            background-size: cover;
+        }
+
+        #fullscreenBtn:hover {
+            background-color: rgba(52, 152, 219, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <button id="fullscreenBtn">Go Fullscreen</button>
+    <script>
+        document.getElementById('fullscreenBtn').addEventListener('click', function() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+            if (document.fullscreenElement) {
+                fullscreenBtn.textContent = "Exit Fullscreen";
+            } else {
+                fullscreenBtn.textContent = "Go Fullscreen";
+            }
+        });
+    </script>
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2008/12/17/cool-red-outer-glow-pointer.html" target="_blank" title="Cool Red Outer Glow Pointer"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cool Red Outer Glow Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+ <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<html translate="no">
+
+  <!-- Include SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- Include Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<!-- Your HTML content here -->
+
+<!-- Include SweetAlert JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  // Example alert with image and icon
+  Swal.fire({
+    title: '𝟚𝟘𝟚𝟜 𝔻𝕚𝕘𝕚𝕥𝕒𝕝 පොසොන් ℤ𝕠𝕟𝕖 එක වෙත ඔබ සැම සාදරෙන් පිළිගනිමු.මෙතැන් සිට ලබාදී ඇති උපදෙස් පිලිපදින්න‍🔥',
+ 
+    imageUrl: 'https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/h%20(online-video-cutter.com)%20(1).gif?v=1717762510747',
+    imageAlt: 'Custom Image',
+    confirmButtonText: 'OK',
+    icon: 'success' // Font Awesome icon class
+  });
+</script>
+</body>
+</html>
+
+<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<html data-bs-theme="light" lang="en">
+    <head>
+       <script>
+        // JavaScript to change the title
+        let titles = ["Digital Thorana 2024 🌐", "Digital Thorana 2024 🖥️", "Digital Thorana 2024 🎓", "Digital Thorana 2024 🤖"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 20); // Change title every 2 seconds
+    </script>
+
+   
+
+     
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+ <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'U' ||  // U
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+<body oncontextmenu="return false;">
+  
+
+  <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+</style>
+</head>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+</body>
+    <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+
+ 
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<head>
+<body>
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=659399cbd2bb410012d24176&product=powr-social-feed' async='async'></script>
+
+<script>
+    // Array of pages to cycle through
+    const pages = ['🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔'];
+    let currentIndex = 0;
+
+    function changeURL() {
+        // Get the next page from the array
+        const nextPage = pages[currentIndex];
+
+        // Change the URL without reloading the page
+        history.pushState(null, '', nextPage);
+
+        // Update the displayed current page
+        document.getElementById('currentPage').innerText = 'Current Page: ' + nextPage;
+
+        // Update the index for the next change
+        currentIndex = (currentIndex + 1) % pages.length;
+    }
+
+    // Change the URL every 3 seconds
+    setInterval(changeURL, 3000);
+
+    // Optional: Handling the back/forward buttons
+    window.onpopstate = function(event) {
+        // This will handle the URL changes via back/forward buttons
+        document.getElementById('currentPage').innerText = 'Current Page: ' + location.pathname.replace('/', '');
+    };
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Digital Thorana 2024</title>
+    <link rel="stylesheet" href="https://siyathatv.lk/onlinevesakzone2024/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://siyathatv.lk/onlinevesakzone2024/assets/css/animate.min.css">
+
+<body style="background: url(https://cdn.glitch.global/32dba132-9d16-4f17-9b67-2efff2913d01/vecteezy_wesak-poya-diwali-lantern-wesak-background-wesak-kudu_445777982-ezgif.com-video-cutter.mp4?v=1718180601474) center / cover no-repeat;height: 100vh;">
+    
+    <div style="position: absolute;bottom: 0px;left: 0px;width: 10%;"><img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/b-removebg-preview%20(1).png?v=1717866396907" style="width: 100%;"></div>
+    <div class="text-center justify-content-center align-items-center align-content-center" style="width: 50%;left: 50%;top: 50%;position: absolute;transform: translateX(-50%) translateY(-50%);">
+        <img src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/-6-8-2024.gif?v=1717869488179" style="width: 100%;margin-bottom: -47px;">
+      
+        <a href="/index1.html">
+            <img data-bss-hover-animate="pulse" src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/image%20(1).png?v=1717994410787" style="width: 60%;">
+        </a>
+        <br>
+       <br>
+      
+        <a href="/lanterns.html">
+        <img data-bss-hover-animate="pulse" src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/image.png?v=1717994407691" style="width: 60%;">
+        </a>
+         <br>
+       <br>
+      
+        <a href="/Buddhist.html">
+            <img data-bss-hover-animate="pulse" src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/image%20(2).png?v=1717994414182" style="width: 60%;">
+        </a>
+         <br>
+       <br>
+      
+        <a href="/Cards.html">
+            <img data-bss-hover-animate="pulse" src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/image%20(3).png?v=1717994419022" style="width: 60%;">
+        </a>
+        <br>
+      <br>
+      <a href="/methuka.html">
+            <img data-bss-hover-animate="pulse" src="https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/image%20(4).png?v=1717994422867" style="width: 60%;">
+        </a>
+      
+    </div>
+    <script>
+    // Initialize a flag to track if the audio is currently playing
+    let isAudioPlaying = false;
+
+    document.addEventListener('click', () => {
+        // Check if audio is already playing; if so, return early
+        if (isAudioPlaying) {
+            return;
+        }
+
+        const audio = new Audio('https://cdn.glitch.global/e2300227-163f-40cc-b7d5-7af03f056e1a/mix_47s%20(audio-joiner.com).mp3?v=1717930704977');
+        
+        // Set loop property to false to prevent audio from looping
+        audio.loop = true;
+
+        // Set flag to true to indicate audio is now playing
+        isAudioPlaying = true;
+
+        // Play the audio
+        audio.play();
+
+        // When audio finishes playing, reset the flag to false
+        audio.onended = () => {
+            isAudioPlaying = false;
+        };
+    });
+</script>
+  
+         
+    <script src="/boot.js"></script>
+    <script src="/thu.js"></script>
+</body>
+
+</html>
